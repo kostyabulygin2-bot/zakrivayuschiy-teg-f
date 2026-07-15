@@ -1,1 +1,11 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P-Regular";
+  --font-weight-content: 410;
+  --font-weight-title: 715;
+  --background-gradient: repeating-linear-gradient(to right);
+  --width-block: clamp(370px, 100vw, 700px);
+  --watermark-color: rgb(255, 255, 255, 0.5);
+}
