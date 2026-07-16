@@ -172,9 +172,69 @@
   margin: 0 33px;
 }
 
+.save_button_icon {
+  inline-size: 28px;
+  block-size: 28px;
+}
+
 .button-text {
   font-family: var(--accent-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 90%;
+}
+
+.dialog {
+  max-inline-size: 353px;
+  inline-size: 90%;
+  min-inline-size: 341px;
+  block-size: 191px;
+  border: 2px solid #000;
+  padding: 30px 40px;
+  margin-bottom: 40vh;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.dialog:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.dialog__container {
+  display: grid;
+  grid-template-columns: 39px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__icon {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.dialog__text {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.dialog__button {
+  inline-size: 100%;
+  block-size: 38px;
+  border: 2px solid #000;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
