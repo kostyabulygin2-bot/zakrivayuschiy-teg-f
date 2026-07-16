@@ -21,13 +21,12 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: var(--bg-color);
   background-repeat: no-repeat;
 }
 
 .header {
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
   margin: 101px auto;
   padding: 122px 16px;
   display: flex;
@@ -42,7 +41,7 @@
 }
 
 .header__title {
-  margin-top: -5px;
+  margin-top: -3px;
   font-family: var(--accent-font), monospace;
   font-weight: 400;
   font-size: 49px;
@@ -69,8 +68,8 @@
 }
 
 .card {
-  border: 2px solid #000;
-  background-color: #fff;
+  border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .card__title {
@@ -89,8 +88,8 @@
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .watermark {
@@ -142,17 +141,25 @@
 
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
+  block-size: 38px;
+  cursor: pointer;
+}
+
 .card__like-button {
-  height: 38px;
-  width: 130px;
+  inline-size: 130px;
   padding-top: 5px;
-  border: 2px solid #000;
-  background-color: transparent;
 }
 
 .card__icon-button {
-  background-color: transparent;
+  background-color: inherit;
   border: none;
+  cursor: pointer;
 }
 
 .button__text {
@@ -163,13 +170,10 @@
 }
 
 .save_button {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 8px;
-  border: 2px solid #000;
-  padding: 17px 20px;
   margin: 0 33px;
+  block-size: 84px;
 }
 
 .save_button_icon {
@@ -177,19 +181,12 @@
   block-size: 28px;
 }
 
-.button-text {
-  font-family: var(--accent-font);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 90%;
-}
-
 .dialog {
   max-inline-size: 353px;
   inline-size: 90%;
   min-inline-size: 341px;
   block-size: 191px;
-  border: 2px solid #000;
+  border: 2px solid var(--accent-color);
   padding: 30px 40px;
   margin-bottom: 40vh;
   position: fixed;
@@ -231,10 +228,34 @@
 
 .dialog__button {
   inline-size: 100%;
-  block-size: 38px;
-  border: 2px solid #000;
-  background-color: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 2px solid var(--accent-color);
+}
+
+@media (width >= 1440px) {
+  .header {
+    padding: 130px 122.5px;
+  }
+
+  .header__title {
+    font-size: 65px;
+  }
+
+  .header__text {
+    font-size: 23px;
+  }
+
+  .save_button {
+    flex-direction: row;
+    margin: 0 182.5px;
+    block-size: 55px;
+  }
+
+  .save_button_icon {
+    inline-size: 21px;
+    block-size: 21px;
+  }
+
+  .dialog {
+    padding: 30px;
+  }
 }
