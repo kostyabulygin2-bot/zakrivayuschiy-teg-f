@@ -9,5 +9,5 @@
   --width-block: clamp(370px, 100vw, 700px);
   --watermark-color: rgb(255, 255, 255, 0.5);
   --accent-color: #000;
-  --bg-color: #fff;
+  --page-color: #fff;
 }
