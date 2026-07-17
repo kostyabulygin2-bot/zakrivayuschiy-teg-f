@@ -81,15 +81,54 @@
 }
 
 .card__image__content {
-  width: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   aspect-ratio: 1/1;
   position: relative;
-  background-image: url(../images/c0135c1ad4694dbc01d70a766d579d5fa894af53.png);
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
+}
+
+.card__image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.card:nth-of-type(2) img{
+  display: block;
+  filter: hue-rotate(-90deg);
+}
+
+.card:nth-of-type(3) img{
+  display: block;
+  filter: saturate(33%);
+}
+
+.card:nth-of-type(4) img{
+  display: block;
+  filter: grayscale(200%);
+}
+
+.card:nth-of-type(5) img{
+  display: block;
+  filter: invert(120%);
+}
+
+.card:nth-of-type(6) img{
+  display: block;
+  filter: opacity(0.5);
+}
+
+.card:nth-of-type(7) img{
+  display: block;
+  filter: blur(0.2rem);
+}
+
+.card:nth-of-type(8) img{
+  display: block;
+  filter: sepia(150%) contrast(150%) brightness(150%);
 }
 
 .watermark {
