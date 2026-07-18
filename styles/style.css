@@ -177,6 +177,26 @@
 
 }
 
+.heart {
+
+}
+
+.contour {
+
+}
+
+.main-body {
+
+}
+
+.core {
+
+}
+
+.sparks {
+  opacity: 0;
+}
+
 .button {
   position: relative;
   overflow: hidden;
