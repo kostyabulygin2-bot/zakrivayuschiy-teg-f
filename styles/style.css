@@ -222,10 +222,6 @@
   animation: sparkle 0.3s ease-in 0.3s forwards;
 }
 
-.heart {
-
-}
-
 .contour {
   transition: fill 0.1s linear;
 }
